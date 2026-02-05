@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-blue-100 min-h-screen text-xs m-0 p-0 text-gray-600">
+  <main class="flex flex-col items-center justify-center  p-4">
+    <article aria-labelledby="order-summary-title">
+      <div class="summary__card-container max-w-xs bg-blue-50  flex flex-col items-center justify-center rounded-lg shadow-lg  overflow-hidden">
+        <header class="summary__card-header w-full overflow-hidden ">
+          <img src="images/illustration-hero.svg" alt="dancing-girl" class="header-img h-full w-full object-cover ">
+        </header>
+
+        <div class="summary__card-section flex flex-col items-center justify-center gap-4 py-8">
+         <div class="summary__card-content flex flex-col  justify-center gap-3 max-w-xs px-8 text-center">
+           <h1 class="summary__card-title text-xl text-blue-950 font-bold"> Order Summary</h1>
+           <p class="summary__card-text"> You can now listen to millions of songs, audiobooks, and podcasts on any 
+           device anywhere you like!</p>
+         </div>
+          <div class="summary__card-billing-container flex items-center justify-between gap-16 border rounded-lg p-4">
+            <figure class="flex items-center gap-4">
+              <div class="summary__card-icon-container w-6 h-6">
+                <img src="images/icon-music.svg" alt="music-icon" class="w-full h-full object-cover">
+              </div>
+              <figcaption class="summary__card-billing-text">
+                <p class="font-bold">Annual Plan</p>
+                <p>$59.99/year</p>
+              </figcaption>
+            </figure>
+
+            <a href="" target="_blank" class="text-blue-500 underline hover:text-blue-700">Change</a>
+          </div>
+
+          <div class="summary__card-buttons flex flex-col w-full px-12 gap-4">
+            <button class="summary__card-primary-btn bg-blue-500 p-2 rounded-lg text-white hover:bg-blue-700">Proceed to Payment</button>
+            <button class="summary__card-secondary-btn hover:text-black">Cancel Order</button>
+          </div>
+        </div>
+      </div>
+    </article>
+ </main>
+
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Daniel Lugemwa</a>.
+  </div>
+</body>
+</html>
